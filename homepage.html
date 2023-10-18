@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/mystyle.css">
+    <title>Homepage</title>
+    <style>
+        body{
+          background-color: #FCFCFC;
+        }
+        .text1{
+          font-size: 20px;
+          font-weight: lighter;
+          color: #B8B7B7;
+        }
+        footer{
+          background-color: #1E1E1E; 
+          margin-top: 100px;
+          color:#FFFFFF; 
+          padding: 100px;
+        }
+        button{
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        .function{
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        img{
+          border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="row" style="margin-top: 30px;margin-bottom: 30px;" >
+        <div class="col" >
+          <img src="../../assets/image/logo.png" alt="Nailing up" style="width:313px;height:106px;">
+        </div>
+        <div class="col " >
+          <button type="button" class="btn btn-outline-purple float-end" style="padding: 5px 30px;" onclick="location.href='login_page.html'">로그인</button>
+
+        </div>
+      </div>
+      <div class="row" style="margin-top: 30px;margin-bottom: 50px;">
+        <div class="col float-left" style="margin: 100px 0px;">
+          <h3><strong>함께 스마트하게 일하기!</strong></h3><br>
+
+          <div class="text1">프로젝트를 관리하거나 업무를 조직직할때 모든 것을
+            <br> 대학생부터 기업까지 사용하기 간편합니다.</div><br>
+
+          <button type="button" class="btn btn-purple" onclick="location.href='signup.html'">회원가입하기!</button>
+        </div>
+        <div class="col">
+          <img src="../../assets/image/comunication.png" style="width: 510px; height: 604px;">
+        </div>
+      </div>
+      <div class="row"style="margin-top: 30px;margin-bottom: 50px;text-align: center;">
+        <h3 style="margin-bottom: 50px; text-align:left ;"><strong> 핵심기능</strong></h3><br>
+        <div class="col"><img src="../assets/image/convenient.png" alt="간편한 사용" class="function" style="margin-bottom:50px ;" onmouseover="myFunction"><br>간편한 사용</div>
+        <div class="col"><img src="../assets/image/visual.png" alt="시각적인 분석" class="function"style="margin-bottom:50px ;"onmouseover="myFunction"><br>시각적인 분석</div>
+        <div class="col"><img src="../assets/image/remote.png" alt="원격 지원"class="function"style="margin-bottom:50px ;"onmouseover="myFunction"><br>원격 지원</div>
+        <div class="col"><img src="../assets/image/board.png" alt="보드 뷰"class="function"style="margin-bottom:50px ;"onmouseover="myFunction"><br>보드 뷰</div>
+      </div>
+    </div>
+    <footer >
+      <div class="row">
+        <div class="col" style="margin-right:80px;">
+          <img src="../assets/image/logo.png">
+          email@gmail.com
+        </div>
+        <div class="col" style="line-height: 40px; margin: 0px 20px;">
+          <strong>SUPPORT</strong><br>
+          Help center<br>
+          Contact sales<br>
+          Team of services
+        </div>
+        <div class="col" style="line-height: 40px; margin: 0px 10px 0px 30px;">
+          <strong>TEAM</strong><br>
+          Contact us
+        </div>
+        <div class="col ">
+          <button type="button" class="btn btn-secondary float-end" style="letter-spacing: 3px; padding: 5px 32px;margin-top: 5px;">영어</button>
+        </div>
+      </div>
+    </footer>
+<script>
+  function myFunction(){
+    document.querySelectorAll('img').style.width="120px";
+    document.getElementsByClassName('function').style.height="120px";
+  }
+  function signUp(){
+    document.getElementsByName('signup').innerHTML('<a href="signup.html" ></a>');
+  }
+  
+
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/mystyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Main</title>
+    <style>
+        body{
+            background-color: #1E1E1E;
+        }
+    </style>
+</head>
+<body>
+        <div class="d-flex justify-content-between" style="height:94px ;background-color: #1E1E1E; ">
+
+                <div class="col" style="color:#ffffff ;margin: auto 0px;">
+                    <span style="margin: auto auto auto 0px;">부서</span>
+                </div>
+                <div class="col" style="margin: auto;">
+                    <button type="button" class="btn btn-secondary d-flex justify-content-center" style=" font-weight: 100; height: 46px; width:285px; margin: auto; padding:10px 30px; ">전체 검색하기  <i class="bi bi-search"></i></button>
+                </div>
+                <div class="col"style="margin: auto 30px;">
+                    <img src="../assets/image/usericon.png" width="60px" height="60px"style="float:right;">
+                </div>
+
+        </div>
+
+        <div style="background-color: #ffffff; height: 100%;">
+              <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="false"><i class="bi bi-plus-circle-fill" style="color:#CA96D7; font-size: 45px;"></i></button>
+                  <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="bi bi-folder2" style="color:#33363F; font-size: 30px;"></i></button>
+                  <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false"><i class="bi bi-people" style="color:#33363F; font-size: 30px;"></i></button>
+                  <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="bi bi-bell" style="color:#33363F; font-size: 30px;"></i></button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent" style="width:100%;">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                        <div class="d-flex justify-content-between" style="height:42px ;">
+                            <div><strong>프로젝트 1 <i class="bi bi-star" style="color: #BAB8B8;"></i> </strong></div>
+                            <div class="" style="float:right; font-size: 40px; margin-right: 30px;">
+                                <i class="bi bi-person-circle"style="color: #000000;"></i>
+                                <i class="bi bi-person-circle" style="color: gray;"></i>
+                            </div>
+                        </div>
+                            
+                        <div class="">
+                                <button type="button" class="btn btn-dark" style="height: 30px; width:120px; padding: 3px 10px;" >보드</button>
+                                <button type="button" class="btn btn-outline-dark" style="  height: 30px; width:120px; padding: 3px 10px;">Dark</button>
+                        </div>
+                        
+                        <div class="" style="background-color: #f4f4f4; width:auto; height:100%; margin-top: 30px; border-radius: 10px; ">
+                            <ul class="" style="font-size: 30px; overflow-x: auto; display: inline">
+                                
+                                <button class="btn btn-purple" type="button"  style="width:308px; height:58px; padding: auto 30px;">
+                                        <span style="font-size: 20px; float:left; margin-left: 10px;">todo</span> 
+                                        <i style="float: right; margin-right: 10px;margin-left: 20px; " class="bi bi-plus-lg"></i>
+                                        <i style="float: right;  "class="bi bi-pencil"></i>
+                                    
+                                </button>
+                                <input type="text" name ="taskname" autocomplete="off">
+
+                                </ul>
+                                
+                                <ul>
+                                    <button class="btn btn-purple" type="button"  style="width:308px; height:58px; padding: auto 30px;">
+                                        <span style="font-size: 20px; float:left; margin-left: 10px;">doing</span> 
+                                        <i style="float: right; margin-right: 10px;margin-left: 20px; " class="bi bi-plus-lg"></i>
+                                        <i style="float: right;  "class="bi bi-pencil"></i>
+                                    
+                                    </button>
+                                </ul>
+                                <ul>
+                                    <button class="btn btn-purple" type="button"  style="width:308px; height:58px; padding: auto 30px;">
+                                        <span style="font-size: 20px; float:left; margin-left: 10px;">done</span> 
+                                        <i style="float: right; margin-right: 10px;margin-left: 20px; " class="bi bi-plus-lg"></i>
+                                        <i style="float: right;  "class="bi bi-pencil"></i>
+                                    
+                                    </button>
+                                </ul>
+                                <ul>
+                                    <button class="btn btn-secondary" type="button"  style="width:308px; height:58px; padding: auto 30px;">
+                                        <i class="bi bi-plus-lg"></i> 새업무 리스트 만드기 
+                                    </button>
+                                </ul>
+                                
+                            </ul>
+                        </div>
+                       
+                    </div>
+                    
+                    <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                </div>
+            </div>
+        </div>
+
+
+    
+</body>
+</html>
